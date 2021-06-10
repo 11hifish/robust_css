@@ -42,9 +42,8 @@ After the cluster is successfully set up on AWS, you will see a ``_redis_passwor
 
 First go to the header node via ```ray attach launch_template.yaml```
 
-Then change the ``_redis_password`` in ``ray.init()`` in file ``code_v2/protocol/interaction.py``.
-
-Now it's time to run ```python3 code_v2/protocol/interaction.py```
+Then change the ``_redis_password`` in ``ray.init()`` in files where Ray functions are used, e.g. ``code_v2/protocol/interaction.py``. <br />
+(The current ``_redis_password`` in the files are the default ones. There should be no need to change them.)
 
 #### An important note
 Since Ray pickles all files to the worker processes, 

@@ -137,7 +137,6 @@ setup_commands:
     - pip3 install -r /home/ubuntu/robust_css/requirements1.txt; sleep 3
     - pip3 install -r /home/ubuntu/robust_css/requirements2.txt; sleep 3
     - pip3 install cvxpy; sleep 3
-    - sudo python3 /home/ubuntu/robust_css/setup.py install
     # Note: if you're developing Ray, you probably want to create a Docker image that
     # has your Ray repo pre-cloned. Then, you can replace the pip installs
     # below with a git checkout <your_sha> (and possibly a recompile).
